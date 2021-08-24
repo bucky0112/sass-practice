@@ -1,0 +1,16 @@
+{
+  "name": "natous",
+  "version": "1.0.0",
+  "description": "Landing page for natours",
+  "main": "index.js",
+  "scripts": {
+    "compile:sass": "node-sass sass/main.scss css/style.css -w"
+  },
+  "author": "Bucky",
+  "license": "ISC",
+  "dependencies": {
+    "global": "^4.4.0",
+    "live-server": "^1.2.1",
+    "node-sass": "^6.0.1"
+  }
+}
