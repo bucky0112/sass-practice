@@ -21,9 +21,22 @@
   box-shadow: 0 .5rem 1rem rgba(0, 0, 0, .2);
 }
 
-.btn-white {
+.btn--white {
   background-color: $color-white;
   color: $color-grey-dark;
+
+  &::after {
+    background-color: $color-white;
+  }
+}
+
+.btn--green {
+  background-color: $color-primary;
+  color: $color-white;
+
+  &::after {
+    background-color: $color-primary;
+  }
 }
 
 .btn::after {
@@ -39,9 +52,9 @@
   transition: all .4s;
 }
 
-.btn-white::after {
-  background-color: $color-white;
-}
+// .btn--white::after {
+//   background-color: $color-white;
+// }
 
 .btn:hover::after {
   transform: scaleX(1.4) scaleY(1.6);
@@ -53,7 +66,7 @@
   animation-fill-mode: backwards;
 }
 
-.btn-text {
+.btn--text {
   &:link,
   &:visited {
     // text-transform: uppercase;
